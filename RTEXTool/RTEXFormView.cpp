@@ -6816,7 +6816,7 @@ void CRTEXFormView::ServerCommend()
 				if (Gripper_state)ServerResponse("夾");
 			}
 			
-				client.Close();
+				client.Close();//關閉連線到Server
 		}
 	else
 	{
