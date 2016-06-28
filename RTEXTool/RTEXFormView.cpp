@@ -6769,7 +6769,7 @@ void CRTEXFormView::ServerCommend()
 	int nServerPort = 8888;
 	if (!serverSocket.Bind(nServerPort))MessageBox("Bind Faild");
 	if (!serverSocket.Listen(10))MessageBox("Listen Faild");
-	while (1){
+	while (1){                         //以下為一直解讀封包
 	if (serverSocket.Accept(client))
 	{
 		//ServerResponse("server on.");
